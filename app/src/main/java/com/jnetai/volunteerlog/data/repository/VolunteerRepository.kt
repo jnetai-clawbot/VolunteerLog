@@ -5,7 +5,6 @@ import com.jnetai.volunteerlog.data.entity.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.withContext
-import javax.inject.Inject
 
 class VolunteerRepository(
     private val entryDao: VolunteerEntryDao,

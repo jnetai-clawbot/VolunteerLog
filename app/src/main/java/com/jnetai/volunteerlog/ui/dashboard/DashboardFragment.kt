@@ -12,6 +12,7 @@ import com.jnetai.volunteerlog.data.entity.VolunteerEntry
 import com.jnetai.volunteerlog.databinding.FragmentDashboardBinding
 import com.jnetai.volunteerlog.ui.MainActivity
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.flow.collectLatest
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -42,19 +43,19 @@ class DashboardFragment : Fragment() {
         binding.rvRecentEntries.adapter = recentEntriesAdapter
 
         viewLifecycleOwner.lifecycleScope.launch {
-            repo.getTotalHours().collect { hours ->
+            repo.getTotalHours().collectLatest { hours ->
                 binding.tvTotalHours.text = String.format("%.1f", hours ?: 0.0)
             }
         }
 
         viewLifecycleOwner.lifecycleScope.launch {
-            repo.getHoursByOrganisation().collect { list ->
+            repo.getHoursByOrganisation().collectLatest { list ->
                 orgHoursAdapter.submitList(list)
             }
         }
 
         viewLifecycleOwner.lifecycleScope.launch {
-            repo.getAllEntries().collect { entries ->
+            repo.getAllEntries().collectLatest { entries ->
                 if (entries.isEmpty()) {
                     binding.tvNoEntries.visibility = View.VISIBLE
                     binding.rvRecentEntries.visibility = View.GONE
@@ -127,9 +128,5 @@ class DashboardFragment : Fragment() {
             val role: TextView = view.findViewById(R.id.tvEntryRole)
             val hours: TextView = view.findViewById(R.id.tvEntryHours)
         }
-    }
-
-    private suspend fun <T> kotlinx.coroutines.flow.Flow<T>.collect(action: (T) -> Unit) {
-        kotlinx.coroutines.flow.collect(this, action)
     }
 }
