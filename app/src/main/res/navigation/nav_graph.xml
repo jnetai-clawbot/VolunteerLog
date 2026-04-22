@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.jnetai.volunteerlog.ui.dashboard.DashboardFragment"
+        android:label="@string/dashboard" />
+
+    <fragment
+        android:id="@+id/hoursFragment"
+        android:name="com.jnetai.volunteerlog.ui.hours.HoursFragment"
+        android:label="@string/log_hours" />
+
+    <fragment
+        android:id="@+id/organisationsFragment"
+        android:name="com.jnetai.volunteerlog.ui.organisations.OrganisationsFragment"
+        android:label="@string/organisations" />
+
+    <fragment
+        android:id="@+id/goalsFragment"
+        android:name="com.jnetai.volunteerlog.ui.goals.GoalsFragment"
+        android:label="@string/goals" />
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.jnetai.volunteerlog.ui.about.AboutFragment"
+        android:label="@string/about" />
+
+</navigation>

@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">VolunteerLog</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="log_hours">Log Hours</string>
+    <string name="organisations">Organisations</string>
+    <string name="goals">Goals</string>
+    <string name="about">About</string>
+    <string name="reminders">Reminders</string>
+
+    <string name="total_hours">Total Hours</string>
+    <string name="hours_by_org">Hours by Organisation</string>
+    <string name="recent_entries">Recent Entries</string>
+    <string name="no_entries_yet">No entries yet. Start logging!</string>
+
+    <string name="organisation">Organisation</string>
+    <string name="date">Date</string>
+    <string name="hours">Hours</string>
+    <string name="role">Role</string>
+    <string name="notes">Notes</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+
+    <string name="add_organisation">Add Organisation</string>
+    <string name="org_name">Organisation Name</string>
+    <string name="contact_info">Contact Info</string>
+    <string name="contact_phone">Phone</string>
+    <string name="contact_email">Email</string>
+
+    <string name="set_goal">Set Goal</string>
+    <string name="hourly_goal">Hourly Goal</string>
+    <string name="progress">Progress</string>
+    <string name="goal_achieved">🎉 Goal Achieved!</string>
+
+    <string name="export_json">Export as JSON</string>
+    <string name="export_csv">Export as CSV</string>
+    <string name="filter">Filter</string>
+    <string name="filter_by_date">Filter by Date</string>
+    <string name="filter_by_org">Filter by Organisation</string>
+    <string name="from_date">From</string>
+    <string name="to_date">To</string>
+    <string name="all_organisations">All Organisations</string>
+    <string name="apply_filter">Apply</string>
+    <string name="clear_filter">Clear</string>
+
+    <string name="schedule_reminder">Schedule Reminder</string>
+    <string name="reminder_title">Reminder Title</string>
+    <string name="reminder_message">Reminder Message</string>
+    <string name="reminder_date_time">Date &amp; Time</string>
+    <string name="reminder_set">Reminder set!</string>
+    <string name="no_reminders">No reminders scheduled</string>
+
+    <string name="about_title">About VolunteerLog</string>
+    <string name="version">Version</string>
+    <string name="check_for_updates">Check for Updates</string>
+    <string name="checking_updates">Checking for updates…</string>
+    <string name="up_to_date">You\'re up to date!</string>
+    <string name="update_available">Update available: %s</string>
+    <string name="error_checking_updates">Error checking for updates</string>
+    <string name="share">Share</string>
+    <string name="share_text">Check out VolunteerLog - track your volunteer hours! https://github.com/jnetai-clawbot/VolunteerLog</string>
+    <string name="github_repo">GitHub Repository</string>
+
+    <string name="hours_format">%.1f hrs</string>
+    <string name="progress_format">%d / %d hrs</string>
+
+    <string name="required_field">This field is required</string>
+    <string name="invalid_hours">Enter a valid number of hours</string>
+    <string name="entry_saved">Entry saved</string>
+    <string name="entry_deleted">Entry deleted</string>
+    <string name="export_saved">Export saved to Downloads</string>
+</resources>

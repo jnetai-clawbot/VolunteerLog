@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/md_theme_dark_background">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnAddOrganisation"
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="@string/add_organisation" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvOrganisations"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/tvNoOrgs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No organisations added yet"
+        android:textColor="@color/md_theme_dark_onSurfaceVariant"
+        android:visibility="gone" />
+
+</LinearLayout>

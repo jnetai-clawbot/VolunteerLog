@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/dashboardFragment"
+        android:icon="@android:drawable/ic_menu_view"
+        android:title="@string/dashboard" />
+    <item android:id="@+id/hoursFragment"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="@string/log_hours" />
+    <item android:id="@+id/organisationsFragment"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="@string/organisations" />
+    <item android:id="@+id/goalsFragment"
+        android:icon="@android:drawable/ic_menu_compass"
+        android:title="@string/goals" />
+    <item android:id="@+id/aboutFragment"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="@string/about" />
+</menu>
