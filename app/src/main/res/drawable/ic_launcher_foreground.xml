@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- VolunteerLog icon - clock/hours symbol -->
+    <path
+        android:fillColor="#FF7CDF64"
+        android:pathData="M54,30m-24,0a24,24 0,1 1,48 0a24,24 0,1 1,-48 0"/>
+    <path
+        android:fillColor="#FF003900"
+        android:pathData="M54,30L54,18L58,18L58,34L46,34L46,30Z"/>
+    <path
+        android:fillColor="#FF7CDF64"
+        android:pathData="M30,72L78,72L78,78L30,78Z"/>
+    <path
+        android:fillColor="#FF9AFD7A"
+        android:pathData="M36,62L42,62L42,72L36,72Z"/>
+    <path
+        android:fillColor="#FF9AFD7A"
+        android:pathData="M46,54L52,54L52,72L46,72Z"/>
+    <path
+        android:fillColor="#FF9AFD7A"
+        android:pathData="M56,48L62,48L62,72L56,72Z"/>
+    <path
+        android:fillColor="#FF9AFD7A"
+        android:pathData="M66,42L72,42L72,72L66,72Z"/>
+</vector>
