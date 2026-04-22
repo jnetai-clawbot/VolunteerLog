@@ -18,6 +18,15 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    signingConfigs {
+        create("release") {
+            storeFile = file("release.keystore")
+            storePassword = "VolunteerLog2026"
+            keyAlias = "release"
+            keyPassword = "VolunteerLog2026"
+        }
+    }
+
     buildTypes {
         release {
             isMinifyEnabled = true
@@ -27,15 +36,6 @@ android {
                 "proguard-rules.pro"
             )
             signingConfig = signingConfigs.getByName("release")
-        }
-    }
-
-    signingConfigs {
-        create("release") {
-            storeFile = file("release.keystore")
-            storePassword = "VolunteerLog2026"
-            keyAlias = "release"
-            keyPassword = "VolunteerLog2026"
         }
     }
 
